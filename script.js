@@ -20,7 +20,7 @@ function rounds(val){
     })
     roundsCounter = val;
     document.getElementById("tes").style.visibility = "hidden";
-    document.getElementById("message").innerHTML = "Player 1 turn";
+    document.getElementById("message").innerHTML = "Player 1's turn";
     document.getElementById('clearAll').innerHTML = "NEXT!";
 }
 document.getElementById("clearAll").style.visibility = "hidden";
