@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="message" id="message">Choose the number of rounds!</div>
+        <div class="tes" id="tes">
+            <button class="confirm" onclick="rounds(1)">1</button>
+            <button class="confirm" onclick="rounds(3)">3</button>
+            <button class="confirm" onclick="rounds(5)">5</button>
+            <button class="confirm" onclick="rounds(7)">7</button>
+        </div>
+    <div class="board">
+        <div class="row">
+            <div class="col" onclick="action(this, 0, 0)"></div>
+            <div class="col" onclick="action(this, 0, 1)"></div>
+            <div class="col" onclick="action(this, 0, 2)"></div>
+        </div>
+        <div class="row">
+            <div class="col" onclick="action(this, 1, 0)"></div>
+            <div class="col" onclick="action(this, 1, 1)"></div>
+            <div class="col" onclick="action(this, 1, 2)"></div>
+        </div>
+        <div class="row">
+            <div class="col" onclick="action(this, 2, 0)"></div>
+            <div class="col" onclick="action(this, 2, 1)"></div>
+            <div class="col" onclick="action(this, 2, 2)"></div>
+        </div>
+        <div class="player">
+            PLAYER 1 : 
+            <span id="player1">0</span>
+        </div>
+        <div class="player">
+        PLAYER 2 : 
+            <span id="player2">0</span>
+        </div>
+        <button class="clearAll" onclick="clearAll(this)" id="clearAll">NEXT!</button>
+    </div>
+    <br>
+    <script src="script.js"></script>
+</body>
+</html>
