@@ -31,12 +31,12 @@ function action(elem, row, col){
     if(turn == 1){
         count++;
         elem.innerHTML = 'X';
-        document.getElementById('message').innerHTML = "Player 2 turn";
+        document.getElementById('message').innerHTML = "Player 2's turn";
         turn = 2;
     }else if(turn == 2){
         count++;
         elem.innerHTML = 'O';
-        document.getElementById('message').innerHTML = "Player 1 turn";
+        document.getElementById('message').innerHTML = "Player 1's turn";
         turn = 1;
     }
     for(var i = 0; i < 3; i++){
@@ -58,7 +58,7 @@ function action(elem, row, col){
             b++;
             document.getElementById('player2').innerHTML = b;
         }
-        document.getElementById('message').innerHTML = "PLAYER " + win + " WINS!";
+        document.getElementById('message').innerHTML = "PLAYER " + win + "'S WINS!";
         document.getElementById('clearAll').style.visibility = "visible";
     }
     roundsCounter--;
@@ -69,7 +69,7 @@ function clearAll(elem){
     cols.forEach((col)=>{
         col.innerHTML = '';
     })
-    document.getElementById('message').innerHTML = "Player 1 turn";
+    document.getElementById('message').innerHTML = "Player 1's turn";
     count = 0;
     win = -1;
     turn = 1;
